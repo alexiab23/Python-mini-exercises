@@ -1,0 +1,20 @@
+#rd = days lived 
+#rw = weeks lived
+#rm = months lived
+#dl = days left until 90
+#wl = weeks left until 90
+#ml = months left until 90
+
+
+age = input("What is your current age?")
+rd = (365 * int(age))
+rw = (52 * int(age))
+rm = (12 * int(age))
+dl = (365 * 90)
+wl = (52 * 90)
+ml = (12 * 90)
+years = (90 - int(age))
+days = dl - rd
+weeks = wl - rw
+months = ml - rm
+print(f"You have {years} years, {days} days, {weeks} weeks and {months} months left to live")
