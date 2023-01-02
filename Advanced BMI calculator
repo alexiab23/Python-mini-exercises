@@ -1,0 +1,21 @@
+#underweight = result < 18.5
+#normal_weight = 18.5 < result < 25
+#slightly_overweight = 25 < result < 30
+#obese = 30 < result < 35
+#clinically_obese = result > 35
+
+height = input("enter your height in m")
+weight = input("enter your weight in kg")
+bmi = float(weight)/float(height) ** 2
+result = int(bmi)
+
+if result < 18.5:
+  print("Based on your height and weight, your BMI is", result, "you are underweight")  
+if 18.5 < result < 25:
+  print("Based on your height and weight, your BMI is", result, "you are at a normal weight") 
+if 25 < result < 30:
+  print("Based on your height and weight, your BMI is", result, "you are slightly overweight")  
+if 30 < result < 35:
+  print("Based on your height and weight, your BMI is", result, " you are obese")  
+if result > 35:
+  print("Based on your height and weight, your BMI is", result, "you are clinically obese or very obese")  
